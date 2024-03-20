@@ -1,10 +1,13 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
+import Vue from "vue";
+import App from "./App.vue";
+import router from "./router";
+import vuetify from "./plugins/vuetify";
+import "./assets/custom-scrollbar.css"; // Import the custom CSS file
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 new Vue({
   router,
-  render: h => h(App)
-}).$mount('#app')
+  vuetify,
+  render: (h) => h(App),
+}).$mount("#app");
